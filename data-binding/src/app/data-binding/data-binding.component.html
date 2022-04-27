@@ -1,0 +1,98 @@
+<!-- <section>
+    <article>
+        <h3>Interpolation</h3>
+        <p>String with interpolation: {{ url }}</p>
+        <p>I'm open to new opportunities? {{opportunities}}</p>
+    </article>
+</section>
+
+<section>
+    <article>
+        <h3>Property Binding - With my favorite movies</h3>
+        <img src="{{ urlImage }}" width="190px" style="margin: 2px;">
+        <img [src]="urlImage2" width="208px" style="margin: 2px;">
+        <img bind-src="urlImage3" width="211px" style="margin: 2px;">
+    </article>
+</section> -->
+
+<!-- <section> 
+    <article>
+        <h3>Class and Style Binding</h3>
+        <div>
+            Select a class:
+            <select #class (change)="0">
+                <option></option>
+                <option value="alert-danger">Danger - Don't click here! </option>
+                <option value="alert-warning">Warning - Think twice before clicking here.</option>
+                <option value="alert-success">Click here :)</option>
+                <option value="alert-info">I have a message to you.</option>
+            </select>
+
+            <br><br>
+
+            <div>
+                <div class="alert alert-danger" role="alert"
+                    [style.display]="class.value == 'alert-danger' ? 'block': 'none' "> It is a danger alert! Are you
+                    not afraid of danger?
+                </div>
+                <div class="alert alert-warning" role="alert"
+                    [style.display]="class.value == 'alert-warning' ? 'block': 'none' "> This is a warning to alert you
+                    to be careful where you click. :(
+                </div>
+                <div class="alert alert-success" role="alert"
+                    [style.display]="class.value == 'alert-success' ? 'block': 'none' "> I'm glad you clicked on
+                    here! It is a successful alert! :)
+                </div>
+                <div class="alert alert-info" role="alert"
+                    [style.display]="class.value == 'alert-info' ? 'block': 'none' "> It's an info. alert. <br>
+                    I'm glad you clicked here to find
+                    out what I can tell you. I want to share that I am open to new challenges and opportunities and you
+                    can contact me on my <a href="{{url}}">Linkedin</a>
+                </div>
+            </div>
+
+        </div>
+    </article>
+</section> -->
+
+<!-- <section>
+    <article>
+        <h3>Event Binding</h3>
+    </article>
+
+    <div>
+        <button (click)="button()" class="btn btn-primary">Click here</button>
+
+        <br><br>
+
+        <input type="text" (keyup.enter)="saveValue(input.value)" (blur)="saveValue(input.value)" #input />
+
+        <p>{{valueSave}}</p>
+    </div>
+
+</section> -->
+
+<!-- <section>
+    <article>
+        <h3>Two-way data binding</h3>
+
+        <div>
+            <input type="text" [value]="name" (input)="name = input.value" #input />
+
+            <input type="text" [(ngModel)]="name" />
+
+            <p>{{name}}</p>
+        </div>
+
+    </article>
+</section> -->
+
+<section>
+    <article>
+        <h3>Input | Output Properties</h3>
+
+        <app-curso [name]="courseName"></app-curso>
+
+        <counter [value]="inicialValue" (valueChange)="onValueChange($event)"></counter>
+    </article>
+</section>
